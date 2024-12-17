@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Barbell Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Dynamic Barbell Chart</h1>
+
+  <!-- Input Area for Data -->
+ <textarea id="dataInput" rows="6" cols="50">
+[
+  { "label": "A", "start": 10, "end": 40 },
+  { "label": "B", "start": 20, "end": 70 },
+  { "label": "C", "start": 30, "end": 60 },
+  { "label": "D", "start": 40, "end": 80 }
+]
+  </textarea>
+  <br>
+  <button onclick="updateChart()">Update Chart</button>
+
+  <!-- Canvas for Chart -->
+  <canvas id="barbellChart" width="600" height="400"></canvas>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="chart.js"></script>
+</body>
+</html>
